@@ -23,6 +23,10 @@ public class Fruits : MonoBehaviour
          
     }
 
+    public void DestroyMe()
+    {
+        Destroy(this.gameObject);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.transform.tag == "Ground")

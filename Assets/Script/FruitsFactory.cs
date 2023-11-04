@@ -17,7 +17,7 @@ public class FruitsFactory : MonoBehaviour
     {
         if (Timer > 5)
         {
-            var createposition = new Vector3(Random.Range(-15.0f, 15.0f), this.transform.position.y, Random.Range(-8.0f, 8.0f));
+            var createposition = new Vector3(Random.Range(-5.0f, 5.0f), this.transform.position.y, Random.Range(-5.0f, 5.0f));
             Instantiate(Fruits, createposition,this.transform.rotation);
             Timer = 0;
         }

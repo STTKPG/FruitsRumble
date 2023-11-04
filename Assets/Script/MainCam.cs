@@ -20,7 +20,7 @@ public class MainCam : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             var distance = Vector3.Distance(Player.position, MainCamera.transform.position);
-            var mouseposition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 15);
+            var mouseposition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 14.5f);
             TargetPosition = MainCamera.ScreenToWorldPoint(mouseposition);
             Debug.Log("X:" + mouseposition.x + "Y:" + mouseposition.y + "Z:" + mouseposition.z);
         }
