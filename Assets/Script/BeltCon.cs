@@ -16,11 +16,12 @@ public class BeltCon : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.transform.tag == "Player")
+        if(other.tag == "Player")
         {
-            collision.transform.GetChild(0);
+
         }
     }
 }
