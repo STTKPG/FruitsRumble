@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Belt
+  - Bucket
   layers:
   - Default
   - TransparentFX

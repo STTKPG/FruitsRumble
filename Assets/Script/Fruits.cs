@@ -15,7 +15,7 @@ public class Fruits : MonoBehaviour
     {
         if (this.gameObject.transform.parent != null)
         {
-            if (this.gameObject.transform.parent.tag == "Player")
+            if (this.gameObject.transform.parent.tag == "Bucket")
             {
                 this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             }
@@ -33,8 +33,9 @@ public class Fruits : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        if (collision.transform.tag == "Player")
+        if (collision.transform.tag == "Bucket")
         {
+            Debug.Log("バケツに当たったよ！");
             this.gameObject.transform.parent = collision.transform;
         }
     }
