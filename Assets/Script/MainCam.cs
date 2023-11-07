@@ -19,10 +19,16 @@ public class MainCam : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            var distance = Vector3.Distance(Player.position, MainCamera.transform.position);
-            var mouseposition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 14.5f);
-            TargetPosition = MainCamera.ScreenToWorldPoint(mouseposition);
-            Debug.Log("X:" + mouseposition.x + "Y:" + mouseposition.y + "Z:" + mouseposition.z);
+            Ray ray = MainCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit HitData = new RaycastHit();
+            if(Physics.Raycast(ray,out HitData))
+            {
+                TargetPosition = HitData.point;
+            }
+            //var distance = Vector3.Distance(Player.position, MainCamera.transform.position);
+            //var mouseposition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 14.5f);
+            //TargetPosition = MainCamera.ScreenToWorldPoint(mouseposition);
+            Debug.Log("X:" + TargetPosition.x + "Y:" + TargetPosition.y + "Z:" + TargetPosition.z);
         }
         //Vector3 MousePosition = Input.mousePosition;
         ////Vector3 TargetPosition = Camera.main.ScreenToWorldPoint(MousePosition);
