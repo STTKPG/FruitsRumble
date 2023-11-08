@@ -369,59 +369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetPosition: {x: 0, y: 0, z: 0}
---- !u!1 &396286290 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8264253067199046042, guid: 4092f2c72e1784e44bef48e25a434750, type: 3}
-  m_PrefabInstance: {fileID: 1273060851}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &396286294
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396286290}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.6
-  m_Center: {x: -0.0006756783, y: -0.00000023840852, z: 0}
---- !u!54 &396286295
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396286290}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &455111853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,6 +1017,7 @@ GameObject:
   - component: {fileID: 1213010857}
   - component: {fileID: 1213010855}
   - component: {fileID: 1213010859}
+  - component: {fileID: 1213010860}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1154,6 +1102,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0.3, z: 0}
+--- !u!65 &1213010860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213010854}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.1, z: 2}
+  m_Center: {x: 0, y: 0.1, z: 1}
 --- !u!1 &1247964831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,13 +1316,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7157069512858915042, guid: 4092f2c72e1784e44bef48e25a434750, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2124425555}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8264253067199046042, guid: 4092f2c72e1784e44bef48e25a434750, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 396286294}
-    - targetCorrespondingSourceObject: {fileID: 8264253067199046042, guid: 4092f2c72e1784e44bef48e25a434750, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 396286295}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4092f2c72e1784e44bef48e25a434750, type: 3}
 --- !u!1001 &1602308809
 PrefabInstance:
