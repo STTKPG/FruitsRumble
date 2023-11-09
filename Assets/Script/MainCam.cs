@@ -30,6 +30,7 @@ public class MainCam : MonoBehaviour
             //TargetPosition = MainCamera.ScreenToWorldPoint(mouseposition);
             Debug.Log("X:" + TargetPosition.x + "Y:" + TargetPosition.y + "Z:" + TargetPosition.z);
         }
+        Debug.Log("X:" + TargetPosition.x + "Y:" + TargetPosition.y + "Z:" + TargetPosition.z);
         //Vector3 MousePosition = Input.mousePosition;
         ////Vector3 TargetPosition = Camera.main.ScreenToWorldPoint(MousePosition);
         //Debug.Log("X:"+MousePosition.x+"Y:"+MousePosition.y+"Z:"+MousePosition.z);
