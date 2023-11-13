@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 160232706831780340}
   - component: {fileID: 1484752027421101015}
   - component: {fileID: 9051883986666828520}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GreapTester
   m_TagString: Untagged
   m_Icon: {fileID: 0}
