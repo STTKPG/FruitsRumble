@@ -8,13 +8,6 @@ public class PlayerManaqer : MonoBehaviour
     MainCam maincam;
     private GameObject BucketBottom;
     Bucket bucket;
-    private Rigidbody PlayerRB;
-    BoyAct boyact;
-    CartAct cartact;
-    [SerializeField]
-    private GameObject Boy;
-    [SerializeField]
-    private GameObject Cart;
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +16,6 @@ public class PlayerManaqer : MonoBehaviour
         maincam = Camera.GetComponent<MainCam>();
         BucketBottom = GameObject.Find("Bucket");
         bucket = BucketBottom.GetComponent<Bucket>();
-        PlayerRB = this.GetComponent<Rigidbody>();
-        boyact = Boy.GetComponent<BoyAct>();
-        cartact = Cart.GetComponent<CartAct>();
     }
 
     // Update is called once per frame
@@ -35,8 +25,7 @@ public class PlayerManaqer : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("ìÆÇ¢ÇƒÇÈÇÊÅI");
-            boyact.BoyRotate(maincam.TargetPosition);
-            cartact.CartRotate(maincam.TargetPosition);
+            transform.rotation = Quaternion.LookRotation(maincam.TargetPosition,Vector3.up);
         }
         if (maincam != null)
         {
@@ -55,6 +44,4 @@ public class PlayerManaqer : MonoBehaviour
             bucket.UnPacking();
         }
     }
-
-
 }
